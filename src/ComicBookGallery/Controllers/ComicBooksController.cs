@@ -13,6 +13,18 @@ namespace ComicBookGallery.Controllers
         //public ContentResult Detail(), changed to
         public ActionResult Detail()
         {
+            //var seriesTitle = "The Amazing Spider-Man"; we put ViewBag object here and the variable's name is capitalized
+            ViewBag.SeriesTitle = "The Amazing Spider-Man";//ViewBag is dynamic
+            ViewBag.IssueNumber = 700;
+            ViewBag.Description = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>";
+            ViewBag.Artists = new string[]
+            {
+                "Script: Dan Slott",
+                "Pencils: Humberto Ramos",
+                "Inks: Victor Olazaba",
+                "Colors: Edgar Delgado",
+                "Letters: Chris Eliopoulos"
+            };
             /*if(DateTime.Today.DayOfWeek == DayOfWeek.Thursday)//(today is Thursday, and by typing ComicBooks/Details we are redirected to the HomePage
             {
                 //return new RedirectResult("/");//press CTRL+F12 to see its base class (ActionResult); now it can be replaced with
