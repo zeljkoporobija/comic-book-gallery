@@ -13,7 +13,7 @@ namespace ComicBookGallery.Controllers
         //public ContentResult Detail(), changed to
         public ActionResult Detail()
         {
-            if(DateTime.Today.DayOfWeek == DayOfWeek.Thursday)//(today is Thursday, and by typing ComicBooks/Details we are redirected to the HomePage
+            /*if(DateTime.Today.DayOfWeek == DayOfWeek.Thursday)//(today is Thursday, and by typing ComicBooks/Details we are redirected to the HomePage
             {
                 //return new RedirectResult("/");//press CTRL+F12 to see its base class (ActionResult); now it can be replaced with
                 return Redirect("/");
@@ -24,7 +24,9 @@ namespace ComicBookGallery.Controllers
             */
             //return new ContentResult()//CTRL+F12 -its base class is also ActionResult
             //thus, in the end, we write:
-            return Content("Hello from the Comic books controller");
+            //return Content("Hello from the Comic books controller");
+            //since all of the code in { } belongs to View, the only thing we need to write here is:
+            return View();
            }
         }
 }
