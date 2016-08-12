@@ -15,21 +15,23 @@ namespace ComicBookGallery.Controllers
         public ActionResult Detail()
         {
             //PASSING THE DATA TO VIEW W/OUT VIEWBAG - OBJECT INITIALIZER SYNTAX:
-            var comicBook = new ComicBook()//necessarily to press the light bulb and give directive use CommicBookGallery.Models
-            {
-                SeriesTitle = "The Amazing Spider-Man",
-                IssueNumber = 700,
-                DescriptionHtml = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>",
-                Artists = new Artist[]
-                {
-                    new Artist() { Name = "Dan Slott", Role = "Script" },
-                    new Artist() { Name = "Humberto Ramos", Role = "Pencils" },
-                    new Artist() { Name = "Vicot Olazaba", Role = "Inks" },
-                    new Artist() { Name = "Edgar Delgado", Role = "Colors" },
-                    new Artist() { Name = "Chris Eliopoulos", Role = "Letters" }
-                }
+            //var comicBook = new ComicBook()//necessarily to press the light bulb and give directive use CommicBookGallery.Models
+            //{
+            //    SeriesTitle = "The Amazing Spider-Man",
+            //    IssueNumber = 700,
+            //    DescriptionHtml = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>",
+            //    Artists = new Artist[]
+            //    {
+            //        new Artist() { Name = "Dan Slott", Role = "Script" },
+            //        new Artist() { Name = "Humberto Ramos", Role = "Pencils" },
+            //        new Artist() { Name = "Vicot Olazaba", Role = "Inks" },
+            //        new Artist() { Name = "Edgar Delgado", Role = "Colors" },
+            //        new Artist() { Name = "Chris Eliopoulos", Role = "Letters" }
+            //    }
 
-            };
+            //}; -> MOVED TO ComicBookRepository.cs!!!
+
+            //OLD VERSION OF DATA
             //var seriesTitle = "The Amazing Spider-Man"; we put ViewBag object here and the variable's name is capitalized
             //ViewBag.SeriesTitle = "The Amazing Spider-Man";//ViewBag is dynamic
             //ViewBag.IssueNumber = 700;
