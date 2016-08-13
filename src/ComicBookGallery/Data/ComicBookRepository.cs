@@ -58,6 +58,10 @@ namespace ComicBookGallery.Data
                 Favorite = false
             }
         };
+        public ComicBook[] GetComicBooks()//the data source for our listing page (HomePage); and now we can go to the controller
+        {
+            return _comicBooks;//private field
+        }
 
         public ComicBook GetComicBook(int id)
         {

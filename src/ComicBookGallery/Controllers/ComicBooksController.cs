@@ -17,6 +17,13 @@ namespace ComicBookGallery.Controllers
         {
             _comicBookRepository = new ComicBookRepository();
         }
+
+        public ActionResult Index()
+        {
+            var comicBooks = _comicBookRepository.GetComicBooks();
+
+            return View(comicBooks);
+        }
         //Action method - every public method on a controller
         //public ContentResult Detail(), changed to
         public ActionResult Detail(int? id)//int is set to nullable
