@@ -81,4 +81,4 @@ namespace ComicBookGallery.Controllers
             return View(comicBook);
            }
         }
-}
+}//TO MAKE A HOME PAGE WORKING: Go to Global.asax and then to RouteConfig.cs (pressing "go to definition")
