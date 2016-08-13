@@ -6,6 +6,7 @@
     //Layout = "~/Views/Shared/_Layout.cshtml"; - no longer needed after we made Index.cshtml
     //ViewBag.Title = "Comic Book Detail"; replaced with:
     ViewBag.Title = Model.DisplayText;
+    ViewBag.ShowBackBar = true;
 }
 
 <h2>@Model.DisplayText</h2>
